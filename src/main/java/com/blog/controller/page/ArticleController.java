@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class NewsController
+ * Servlet implementation class ArticleController
  */
-@WebServlet({ "/news", "/news/*" })
-public class NewsController extends AbstractController {
+@WebServlet("/article")
+public class ArticleController extends AbstractController {
 
-	private static final long serialVersionUID = 6191637952323426058L;
+	private static final long serialVersionUID = 6455531591584721245L;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
@@ -21,7 +21,7 @@ public class NewsController extends AbstractController {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		this.forwardToPage("news.jsp", request, response);
+		this.forwardToPage("article.jsp", request, response);
 	}
 
 	/**
@@ -30,7 +30,7 @@ public class NewsController extends AbstractController {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// -----------
+		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
